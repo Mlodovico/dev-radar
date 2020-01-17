@@ -1,7 +1,12 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, YellowBox } from 'react-native';
 
 import Routes from './src/routes';
+
+YellowBox.ignoreWarnings([
+  'Debugger and divece time',
+  'Possible Unhandled Pormise Rejection',
+])
 
 export default function App() {
   return (
